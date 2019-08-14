@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category   Wishpond
+ * @package    Wishpond_SocialCampaigns
+ * @author     ModuleCreator
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+<config>
+    <modules>
+        <Wishpond_SocialCampaigns>
+            <version>0.1.0</version>
+        </Wishpond_SocialCampaigns>
+    </modules>
+    <frontend>
+        <routers>
+            <socialcampaigns>
+                <use>standard</use>
+                <args>
+                    <module>Wishpond_SocialCampaigns</module>
+                    <frontName>socialcampaigns</frontName>
+                </args>
+            </socialcampaigns>
+        </routers>
+        <layout>
+            <updates>
+                <socialcampaigns>
+                    <file>socialcampaigns.xml</file>
+                </socialcampaigns>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+      <socialcampaigns>
+        <use>admin</use>
+        <args>
+          <module>Wishpond_SocialCampaigns</module>
+          <frontName>socialcampaigns</frontName>
+        </args>
+      </socialcampaigns>
+        </routers>
+    </admin>
+    <adminhtml>
+    <menu>
+      <socialcampaigns module="socialcampaigns">
+        <title>Wishpond Social Campaigns</title>
+        <sort_order>100</sort_order>
+        <action>socialcampaigns/adminhtml_socialcampaigns</action>
+      </socialcampaigns>
+    </menu>
+    <acl>
+      <resources>
+        <all>
+          <title>Allow Everything</title>
+        </all>
+        <admin>
+          <children>
+            <Wishpond_SocialCampaigns>
+              <title>SocialCampaigns Module</title>
+              <sort_order>10</sort_order>
+            </Wishpond_SocialCampaigns>
+          </children>
+        </admin>
+      </resources>
+    </acl>
+    <layout>
+      <updates>
+        <socialcampaigns>
+          <file>socialcampaigns.xml</file>
+        </socialcampaigns>
+      </updates>
+    </layout>
+    </adminhtml>   
+    <global>
+        <models>
+            <socialcampaigns>
+                <class>Wishpond_SocialCampaigns_Model</class>
+                <resourceModel>socialcampaigns_mysql4</resourceModel>
+            </socialcampaigns>
+            <socialcampaigns_mysql4>
+                <class>Wishpond_SocialCampaigns_Model_Mysql4</class>
+                <entities>
+                    <socialcampaigns>
+                        <table>socialcampaigns</table>
+                    </socialcampaigns>
+                </entities>
+            </socialcampaigns_mysql4>
+        </models>
+        <resources>
+            <socialcampaigns_setup>
+                <setup>
+                    <module>Wishpond_SocialCampaigns</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </socialcampaigns_setup>
+            <socialcampaigns_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </socialcampaigns_write>
+            <socialcampaigns_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </socialcampaigns_read>
+        </resources>
+        <blocks>
+            <socialcampaigns>
+                <class>Wishpond_SocialCampaigns_Block</class>
+            </socialcampaigns>
+        </blocks>
+        <helpers>
+            <socialcampaigns>
+                <class>Wishpond_SocialCampaigns_Helper</class>
+            </socialcampaigns>
+        </helpers>
+    </global>
+</config>

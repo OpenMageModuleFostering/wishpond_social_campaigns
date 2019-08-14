@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<config>
+
+    <modules>
+        <Wishpond_SocialCampaignsBad>
+            <version>0.1.0</version>
+        </Wishpond_SocialCampaignsBad>
+    </modules>
+
+
+    <global>
+            <helpers>
+                <SocialCampaignsBad>
+                    <class>Wishpond_SocialCampaignsBad_Helper</class>
+                </SocialCampaignsBad>  
+            </helpers>
+    </global>
+
+
+    <admin>
+        <routers>
+            <socialcampaignsbad>
+                <use>admin</use>
+                <args>
+                    <module>Wishpond_SocialCampaignsBad</module>
+                    <frontName>socialcampaignsbad</frontName>
+                </args>
+            </socialcampaignsbad>
+        </routers>
+    </admin>
+
+</config>

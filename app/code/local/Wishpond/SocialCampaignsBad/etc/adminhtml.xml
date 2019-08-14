@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <promo>
+                        <children>
+                            <socialcampaignsbad translate="title" module="SocialCampaignsBad">
+                                <title>Social Campaigns Bad</title>
+                                <sort_order>100</sort_order>
+                            </socialcampaignsbad>
+                        </children>
+                    </promo>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <promo>
+            <children>
+                <socialcampaignsbad translate="title" module="SocialCampaignsBad">
+                    <title>
+                      Social Campaigns Bad
+                    </title>
+                    <sort_order>-1000</sort_order>
+                    <!-- Without an action tag, this menu item will do nothing -->
+                    <!--action>adminhtml/promo_socialcampaignsbad</action-->
+                    <!--depends><module>Wishpond_SocialCampaignsBad</module></depends-->
+                    <disabled>true</disabled>
+                </socialcampaignsbad>
+            </children>
+        </promo>
+    </menu>
+</config>
