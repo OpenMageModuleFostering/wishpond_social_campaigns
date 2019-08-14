@@ -1,0 +1,37 @@
+<div class="content-header">
+  <h3 style="margin-bottom: 8px">
+    Wishpond Social Campaigns &nbsp;|&nbsp;
+    <a  href="#" onclick="wp_navigate_iframe('home')">
+      Home
+    </a>
+  </h3>
+</div>
+<div id="wishpond_iframe_container" style="margin-top: -21px;">
+  <iframe id="wishpond_iframe" style="border: 0px none transparent;"
+          src="<?php echo $this->getIFrameURL() ?>"
+          height="2000" width="100%"
+          onload="scrollToTop()">
+    Sorry, your browser does not support frames.
+  </iframe>
+  <hr width="100%" />
+</div>
+<?php echo $this->getViewHtml() ?>
+<script type="text/javascript">
+  function wp_navigate_iframe(target) {
+    var iframe = document.getElementById('wishpond_iframe');
+
+    switch(target) {
+      case 'home':
+        // Go home
+        iframe.src = '<?php echo $this->getWPHomeURL() ?>';
+        break;
+      default:
+        // Do nothing
+    }
+
+    return false;
+  }
+  function scrollToTop() {
+    scroll(0,0);
+  }
+</script>
