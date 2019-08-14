@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package>
     <name>Wishpond_Social_Campaigns</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
-    <license>Need a License</license>
+    <license>GPL</license>
     <channel>community</channel>
     <extends/>
     <summary>Easily gather new Customer Intelligence - and new customers - by running Sweepstakes and Offers on your Magento Store and Facebook Page. Free 30-day trial.</summary>
@@ -34,8 +34,8 @@ http://corp.wishpond.com/social-offers/features/&#xD;
 http://corp.wishpond.com/social-sweepstakes/features/</description>
     <notes>Only tested with Magento 1.7</notes>
     <authors><author><name>The Wishpond Team</name><user>Wishpond</user><email>nick@wishpond.com</email></author></authors>
-    <date>2012-08-13</date>
-    <time>20:58:48</time>
+    <date>2012-08-29</date>
+    <time>21:40:11</time>
     <contents><target name="magelocal"><dir name="Wishpond"><dir name="SocialCampaigns"><dir name="Block"><dir name="Adminhtml"><dir name="SocialCampaigns"><dir name="Edit"><file name="Form.php" hash="62a368b0f5f8f8cd12c3e42edceed6f8"/><dir name="Tab"><file name="Form.php" hash="36a18dfa8436834486570e4f598cc55c"/></dir><file name="Tabs.php" hash="ef22233895abd3b551fc953c299a080e"/></dir><file name="Edit.php" hash="c3285963af346216508f9ae64b3fdf7d"/><file name="Grid.php" hash="da38397c78adab6832fafb8d41c50cd5"/></dir><file name="SocialCampaigns.php" hash="9df31edf92367365428569106ab455bc"/></dir><file name="SocialCampaigns.php" hash="573b7714f0439a04bd6eb609c3c4c09e"/></dir><dir name="Helper"><file name="Data.php" hash="560ddb219079431890450335f90155d5"/></dir><dir name="Model"><dir name="Mysql4"><dir name="SocialCampaigns"><file name="Collection.php" hash="d1cd63894ad249baf80ddaf7d36d054e"/></dir><file name="SocialCampaigns.php" hash="37c3b7c32a9f8cd3556ac726e29da239"/></dir><file name="SocialCampaigns.php" hash="0f67a946caa0061068eeeba34210620d"/><file name="Status.php" hash="28691545b6afb9ad65f0e4e77fefd3ab"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="SocialCampaignsController.php" hash="1d04aa47b68006d2d2c5fe1352866b91"/></dir><file name="IndexController.php" hash="feaf2ab4521396763f228cadcefbd057"/></dir><dir name="etc"><file name="config.xml" hash="dd7cabf4b76ba5612431a0efffbda308"/></dir><dir name="sql"><dir name="socialcampaigns_setup"><file name="mysql4-install-0.1.0.php" hash="2f0f3ab1b4df6b1b93ed02a2ada828a0"/></dir></dir></dir><dir name="SocialCampaignsBad"><dir name="Helper"><file name="Data.php" hash="661a6feee02ac07fd481deba04f19db5"/></dir><dir name="controllers"><file name="SimpleController.php" hash="1bc906267a9a076d8268715f85d37c22"/></dir><dir name="etc"><file name="adminhtml.xml" hash="f29b348e5729d44f8131c4aca926e0bc"/><file name="config.xml" hash="d132fb20d5b0551cacabdcbf70d23be2"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="socialcampaigns.xml" hash="0e571de8198e04f1b08aefd2674ad682"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Wishpond_SocialCampaigns.xml" hash="922ddd16deb7be4525ca0d987f6b237d"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.3.0</min><max>5.3.14</max></php></required></dependencies>
