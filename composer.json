@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Wishpond_Social_Campaigns",
+    "name": "OpenMageModuleFostering\/Wishpond_Social_Campaigns",
     "type": "magento-module",
     "license": "GPL",
     "homepage": "",
     "description": "Easily gather new Customer Intelligence - and new customers - by running Sweepstakes and Offers on your Magento Store and Facebook Page. Free 30-day trial.",
     "authors": [
-    {
-        "name": "The Wishpond Team",
-        "email": "nick@wishpond.com"
-    }
-],
+        {
+            "name": "The Wishpond Team",
+            "email": "nick@wishpond.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
